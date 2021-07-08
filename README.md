@@ -33,6 +33,10 @@ pytest --language=es test_items.py
 
 ***
 #### FAQ:
++ Использование: кроме стандартных опций _`pytest`_ доступны необязательные параметры _`--language`_ и _`--browser_name`_. Например:
+```shell
+pytest --browser_name=firefox --language=de
+```
 + Язык по умолчанию: _`ru`_
     * Доступные параметры _`--language`_: ar ca cs da de en-gb el es fi fr it ko nl pl pt pt-br ro ru sk uk zh-cn
 + Браузер по умолчанию: _`chrome`_
