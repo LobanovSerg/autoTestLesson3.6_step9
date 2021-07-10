@@ -27,11 +27,13 @@ def browser(request):
 
     # создание исключения при неверном вводе языка
     if browser_lang not in langs_list:
-        raise Exception('Wrong language! List languages: ', *langs_list)
+        raise Exception('Wrong language! List languages: ' +
+                        ' '.join(langs_list))
 
     # создание исключения при неверном вводе браузера
     if browser_name not in browsers_list:
-        raise Exception('Wrong browser! List browsers: ', *browsers_list)
+        raise Exception('Wrong browser! List browsers: ' +
+                        ' '.join(browsers_list))
 
     print(f'\nStart {browser_name} browser..')
 
